@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Overload</title>
+</head>
+<body>
+    <script>
+        const colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#00FFFF", "#FF00FF", "#C0C0C0"];
+        let index = 0;
+
+        setInterval(function() {
+            document.body.style.backgroundColor = colors[index];
+            index++;
+            if (index >= colors.length) {
+                index = 0;
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
